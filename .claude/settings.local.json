@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash:*)",
+      "Bash(jq:*)",
+      "Bash(npm run:*)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill /PID 33812 /F)",
+      "Bash(taskkill /PID 29880 /F)",
+      "Bash(taskkill /PID 27700 /F)",
+      "Bash(ngrok version:*)",
+      "Bash(findstr :3000)",
+      "Bash(ngrok http:*)",
+      "Bash(curl -s http://127.0.0.1:4040/api/tunnels)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['tunnels'][0]['public_url']\\)\")",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(python3 -c ':*)",
+      "Bash(node -e ':*)",
+      "Bash(ls tailwind.config.*)",
+      "Bash(cat postcss.config.*)",
+      "Bash(node -e \"console.log\\(require\\('tailwindcss/package.json'\\).version\\)\")",
+      "Bash(npx kill-port:*)",
+      "Bash(curl -s http://localhost:3000)",
+      "Skill(update-config)",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(node:*)",
+      "Bash(curl -s \"http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0vmbhjq._.css\")",
+      "Bash(curl -s http://localhost:3000/api/products?featured=true)",
+      "Bash(limit=10 2>&1)",
+      "Bash(taskkill:*)",
+      "Bash(xargs -r kill -f)",
+      "Bash(grep:*)",
+      "Bash(python3:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

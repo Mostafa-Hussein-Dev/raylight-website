@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String
+  slug        String   @unique
+  subtitle    String
+  description String
+  category    String
+  style       String
+  color       String
+  material    String
+  wattage     Int
+  voltage     String   @default("110-240V")
+  dimmable    Boolean  @default(false)
+  inStock     Boolean  @default(true)
+  featured    Boolean  @default(false)
+  image       String
+  images      String[] @default([])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+  @@index([style])
+  @@index([color])
+  @@index([material])
+  @@index([featured])
+  @@index([createdAt])
+  @@index([name])
+}
